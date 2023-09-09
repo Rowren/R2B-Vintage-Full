@@ -290,7 +290,7 @@ nav{
 .container-home{    
     width: 100%;
     height: 70vw;
-    display: ;
+    display: flex;
     justify-content: center;
 }
 
