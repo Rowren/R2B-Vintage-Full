@@ -154,6 +154,7 @@ function searchsomething(elem) {
 
 }
 
+
 function searchproduct(param) {
     console.log(param)
     $(".product-items").css('display', 'none')
@@ -285,4 +286,25 @@ function deinitems(action, index) {
         $("#countitems"+index).text(cart[index].count)
         rendercart();
     }
+}
+
+function openMenu() {
+
+    document.getElementById("btn-open").style.visibility = "hidden";
+    document.getElementById("btn-close").style.visibility = "visible";
+
+    document.getElementById("side-menu").style.width = "250px";
+    $(".sidebar-itemmedai").css('display', 'block');
+
+}
+
+function closeMenu() {
+
+    document.getElementById("btn-close").style.visibility = "hidden";
+    document.getElementById("btn-open").style.visibility = "visible";
+
+    document.getElementById("side-menu").style.width = "0px";
+    $(".sidebar-itemmedai").css('display', 'none');
+
+
 }
